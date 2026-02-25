@@ -63,7 +63,7 @@ export default function Header() {
           <div className="flex lg:hidden">
             <button
               aria-label="Book session"
-              className="bg-primary transition-colors hover:text-primary/80">
+              className="bg-primary transition-colors hover:text-primary/80 cursor-pointer">
               <span className="material-symbols-outlined">
                 calendar_month
               </span>

@@ -9,6 +9,7 @@
 @theme {
   --color-text: #0f172a;
   --color-primary: #BAA297;
+  --color-sand: #f4f2f0;
 }
 
 @theme inline {

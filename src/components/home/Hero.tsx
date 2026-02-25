@@ -30,7 +30,7 @@ export default function Hero() {
           {t.hero.subtitle}
         </p>
         <div className="flex flex-col gap-4 sm:flex-row">
-            <button className="rounded-lg bg-white px-8 py-3.5 text-sm font-bold uppercase tracking-wider text-slate-900 transition-all hover:bg-sand hover:shadow-lg">
+            <button className="rounded-lg bg-white px-8 py-3.5 text-sm font-bold uppercase tracking-wider text-slate-900 transition-all hover:bg-sand hover:shadow-2xl cursor-pointer">
             {t.hero.cta}
             </button>
         </div>

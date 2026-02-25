@@ -21,9 +21,9 @@ export const dictionary = {
             cta: "Book a session"
         },
         hero: {
-            title1: "Capturing timeless moments",
-            title2: "Capturing timeless moments",
-            subtitle: "",
+            title1: "Stories worth",
+            title2: "remembering.",
+            subtitle: "Creating authentic, timeless imagery that reflects your essence with sensitivity and style.",
             cta: "VIew portfolio",
         },
     },
