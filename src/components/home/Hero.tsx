@@ -1,6 +1,9 @@
 import Image from "next/image"
+import { dictionary } from "@/lib/dictionary";
 
 export default function Hero() {
+  const t = dictionary.es; 
+
   return (
     <section className="relative h-[85vh] w-full overflow-hidden">
       <Image
@@ -19,13 +22,18 @@ export default function Hero() {
         </span>
 
         <h1 className="font-serif text-5xl md:text-7xl leading-tight">
-          Capturing Life's <br />
-          <span className="italic">Quiet Moments</span>
+          {t.hero.title1} <br/>
+          <span className="italic">{t.hero.title2}</span>
         </h1>
 
-        <p className="mt-6 max-w-lg text-lg text-white/90">
-          Creating timeless, emotive imagery that tells your unique story with warmth and authenticity.
+        <p className="mt-6 mb-10 max-w-lg text-lg text-white/90">
+          {t.hero.subtitle}
         </p>
+        <div className="flex flex-col gap-4 sm:flex-row">
+            <button className="rounded-lg bg-white px-8 py-3.5 text-sm font-bold uppercase tracking-wider text-slate-900 transition-all hover:bg-sand hover:shadow-lg">
+            {t.hero.cta}
+            </button>
+        </div>
       </div>
     </section>
   )

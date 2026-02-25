@@ -1,6 +1,4 @@
 import { dictionary } from "@/lib/dictionary";
-
-
 import Link from "next/link";
 
 export default function Header() {

@@ -7,8 +7,10 @@ export const dictionary = {
             cta: "Contratar servicio",
         },
         hero: {
-            title: "Capturando momentos únicos",
-            cta: "Reservar sesión",
+            title1: "Historias que merecen",
+            title2: "ser recordadas",
+            subtitle: "Creando imágenes auténticas y atemporales que reflejan tu esencia con sensibilidad y estilo.",
+            cta: "Ver portfolio",
         },
     },
     en: {
@@ -19,8 +21,10 @@ export const dictionary = {
             cta: "Book a session"
         },
         hero: {
-            title: "Capturing timeless moments",
-            cta: "Book a session",
+            title1: "Capturing timeless moments",
+            title2: "Capturing timeless moments",
+            subtitle: "",
+            cta: "VIew portfolio",
         },
     },
 };
