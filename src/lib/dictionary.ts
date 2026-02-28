@@ -56,7 +56,25 @@ export const dictionary = {
               },
             ],
           },
+          footer: {
+            brand: "Tu Nombre",
+            description: "Fotografía fine art capturando historias con luz natural y emoción auténtica.",
+            navigation: "Navegación",
+            contact: "Contacto",
+            email: "hello@tunombre.com",
+            phone: "+54 9 11 0000 0000",
+            instagramUrl: "https://instagram.com/tunombre",
+            rights: "Todos los derechos reservados.",
+            signature: "Diseñado con intención.",
+            links: {
+              about: "Sobre mí",
+              portfolio: "Portafolio",
+              process: "Proceso",
+              contact: "Contacto",
+            }
+          }
     },
+    
     en: {
         header: {
             linkAbout: "About",
@@ -113,6 +131,23 @@ export const dictionary = {
                   "You will receive a carefully edited online gallery with high-resolution images ready to preserve, share, and print — memories designed to last a lifetime.",
               },
             ],
-          },
+        },
+        footer: {
+            brand: "Tu Nombre",
+            description: "Fotografía fine art capturando historias con luz natural y emoción auténtica.",
+            navigation: "Navegación",
+            contact: "Contacto",
+            email: "hello@tunombre.com",
+            phone: "+54 9 11 0000 0000",
+            instagramUrl: "https://instagram.com/tunombre",
+            rights: "Todos los derechos reservados.",
+            signature: "Diseñado con intención.",
+            links: {
+              about: "Sobre mí",
+              portfolio: "Portafolio",
+              process: "Proceso",
+              contact: "Contacto",
+            }
+        }  
     },
 };
