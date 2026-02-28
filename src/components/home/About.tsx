@@ -9,7 +9,7 @@ export default function About() {
   const { lang } = useLanguage();
   const t = dictionary[lang];
   return (
-    <section id="about" className="bg-[#F9F7F2] py-24 sm:py-32">
+    <section id="about" className="bg-background-light py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2 lg:gap-24">
           
@@ -88,7 +88,7 @@ export default function About() {
                 href="#"
                 className="group inline-flex items-center gap-2 font-semibold text-primary transition-colors hover:text-primary/80"
               >
-                Read Full Bio
+                {t.about.ctaLink}
                 <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
                   arrow_forward
                 </span>

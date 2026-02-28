@@ -25,8 +25,9 @@ export const dictionary = {
                 label: "Años de experiencia",
             },
             destinations: {
-                label: "Destinos recorridos",
+                label: "Destinos",
             },
+            ctaLink: "Leer Bio Completa"
         },
     },
     en: {
@@ -49,14 +50,15 @@ export const dictionary = {
             description: "Photography has always been my way of observing the world with intention and sensitivity. I’m drawn to honest details, soft light, and the quiet beauty that exists in everyday moments. Through my lens, I seek to tell stories that feel intimate and timeless.",
             description2: "My approach is natural and unobtrusive, allowing emotions to unfold freely. Whether I’m capturing the delicate calm before a ceremony or the spontaneous laughter shared between loved ones, my purpose is to create images that feel authentic, heartfelt, and deeply personal.",
             stories: {
-                label: "Historias capturadas",
+                label: "Stories told",
             },
             experience: {
-                label: "Años de experiencia",
+                label: "Years experience",
             },
             destinations: {
-                label: "Destinos recorridos",
+                label: "Destinations",
             },
+            ctaLink: "Read Full Bio"
         },
     },
 };

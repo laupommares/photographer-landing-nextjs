@@ -1,4 +1,5 @@
 import About from "@/components/home/About"
+import CTASection from "@/components/home/ContactCTA"
 import Hero from "@/components/home/Hero"
 import PortfolioGrid from "@/components/home/PortfolioGrid"
 import ProcessSection from "@/components/home/ProcessSection"
@@ -12,6 +13,7 @@ export default function HomePage() {
       <About />
       <PortfolioGrid />
       <ProcessSection />
+      <CTASection/>
     </>
   )
 }

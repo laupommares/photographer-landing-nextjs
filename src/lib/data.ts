@@ -11,7 +11,7 @@ export type ProcessStep = {
       title: "Consultation",
       description:
         "We discuss your vision, location ideas, and styling to ensure everything aligns perfectly with your story.",
-      icon: "chat_bubble_outline",
+      icon: "chat_bubble",
     },
     {
       id: 2,
