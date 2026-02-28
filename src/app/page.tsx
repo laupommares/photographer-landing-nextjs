@@ -8,8 +8,8 @@ export default function HomePage() {
     <>
       <Header/>
       <Hero />
-      <ProcessSection />
       <About />
+      <ProcessSection />
     </>
   )
 }

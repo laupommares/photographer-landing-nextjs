@@ -1,8 +1,14 @@
+"use client";
+
 import { dictionary } from "@/lib/dictionary";
+import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Header() {
-  const t = dictionary.es; 
+  const [lang, setLang] = useState<"es" | "en">("es");
+
+  const t = dictionary[lang];
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-sand bg-white/90 backdrop-blur-md transition-all duration-300">
@@ -33,13 +39,16 @@ export default function Header() {
 
           {/* Logo */}
           <div className="flex shrink-0 items-center gap-2">
-            <span className="material-symbols-outlined text-2xl text-primary">
-              photo_filter
-            </span>
-
             <Link href="/"
               className="font-serif text-2xl font-bold tracking-tight text-slate-900">
-              Sofía Capuano
+              <Image
+                src="/logo-sofia-capuano.svg"
+                alt="Fine art portrait during golden hour"
+                width={200}
+                height={40}
+                priority
+                className="object-cover"
+              />
             </Link>
           </div>
 
@@ -53,9 +62,22 @@ export default function Header() {
               className="text-sm font-medium tracking-wide transition-colors hover:text-primary">
               {t.header.linkContact}
             </Link>
+            <div className="flex items-center gap-2 text-sm">
+              <button
+                onClick={() => setLang("es")}
+                className={lang === "es" ? "font-bold text-primary" : ""}>
+                ES
+              </button>
+              <span>/</span>
+              <button
+                onClick={() => setLang("en")}
+                className={lang === "en" ? "font-bold text-primary" : ""}>
+                EN
+              </button>
+            </div>
 
-            <button className="rounded-lg bg-primary px-5 py-2.5 text-sm font-bold text-white transition-all hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20">
-            {t.header.cta}
+            <button className="rounded-lg bg-primary px-5 py-2.5 text-sm font-bold text-white transition-all hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20 cursor-pointer">
+              {t.header.cta}
             </button>
           </div>
 

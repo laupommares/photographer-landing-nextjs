@@ -12,12 +12,18 @@ export const dictionary = {
             subtitle: "Creando imágenes auténticas y atemporales que reflejan tu esencia con sensibilidad y estilo.",
             cta: "Ver portfolio",
         },
+        about: {
+            eyebrow: "Sobre Sofía",
+            title2: "ser recordadas",
+            subtitle: "Creando imágenes auténticas y atemporales que reflejan tu esencia con sensibilidad y estilo.",
+            cta: "Ver portfolio",
+        },
     },
     en: {
         header: {
             linkAbout: "About",
             linkProcess: "Process",
-            linkContact: "Contacto",
+            linkContact: "Contact",
             cta: "Book a session"
         },
         hero: {
@@ -25,6 +31,12 @@ export const dictionary = {
             title2: "remembering.",
             subtitle: "Creating authentic, timeless imagery that reflects your essence with sensitivity and style.",
             cta: "VIew portfolio",
+        },
+        about: {
+            eyebrow: "About Sofía",
+            title2: "ser recordadas",
+            subtitle: "Creando imágenes auténticas y atemporales que reflejan tu esencia con sensibilidad y estilo.",
+            cta: "Ver portfolio",
         },
     },
 };
