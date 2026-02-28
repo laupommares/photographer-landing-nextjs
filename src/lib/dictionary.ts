@@ -64,12 +64,10 @@ export const dictionary = {
             secondaryButton: "Contactarme"
         },
         footer: {
-            brand: "Tu Nombre",
             description: "Fotografía fine art capturando historias con luz natural y emoción auténtica.",
             navigation: "Navegación",
             contact: "Contacto",
             email: "hello@tunombre.com",
-            phone: "+34 611 328596",
             instagramUrl: "https://instagram.com/sofiacapuanoph",
             rights: "Todos los derechos reservados.",
             signature: "Diseñado con intención.",
@@ -147,12 +145,10 @@ export const dictionary = {
             secondaryButton: "Contactarme"
         },
         footer: {
-            brand: "Tu Nombre",
             description: "Fotografía fine art capturando historias con luz natural y emoción auténtica.",
             navigation: "Navegación",
             contact: "Contacto",
             email: "hello@tunombre.com",
-            phone: "+34 611 328596",
             instagramUrl: "https://instagram.com/sofiacapuanoph",
             rights: "Todos los derechos reservados.",
             signature: "Diseñado con intención.",

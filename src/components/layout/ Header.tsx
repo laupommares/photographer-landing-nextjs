@@ -27,7 +27,7 @@ export default function Header() {
 
           {/* Left Nav */}
           <nav className="hidden text-text items-center gap-8 lg:flex">
-            <Link href="#portfolio"
+            <Link href="/portfolio"
               className="text-sm tracking-wide transition-colors hover:text-primary">
               Portfolio
             </Link>

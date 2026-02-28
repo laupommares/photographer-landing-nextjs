@@ -13,7 +13,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <h3 className="font-serif text-2xl text-slate-900 mb-4">
-              {t.footer.brand}
+              Sofía Capuano
             </h3>
             <p className="text-sm text-slate-600 leading-relaxed max-w-sm">
               {t.footer.description}
@@ -56,14 +56,12 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 text-sm text-slate-700">
               <li>{t.footer.email}</li>
-              <li>{t.footer.phone}</li>
+              <li>+34 611 328596</li>
               <li>
-                <a
-                  href={t.footer.instagramUrl}
+                <a href="https://instagram.com/sofiacapuanoph"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-primary transition-colors"
-                >
+                  className="hover:text-primary transition-colors">
                   Instagram
                 </a>
               </li>
@@ -79,7 +77,6 @@ export default function Footer() {
           <p>
             © {new Date().getFullYear()} {t.footer.brand}. {t.footer.rights}
           </p>
-          <p>{t.footer.signature}</p>
         </div>
 
       </div>

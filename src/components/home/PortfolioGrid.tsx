@@ -3,6 +3,7 @@
 import { useLanguage } from "@/context/LanguageContext"
 import { dictionary } from "@/lib/dictionary"
 import Image from "next/image"
+import Link from "next/link";
 
 type PortfolioItem = {
   id: number
@@ -87,14 +88,13 @@ export default function PortfolioGrid() {
               </div>
             </div>
           ))}
-
         </div>
 
         {/* CTA */}
         <div className="mt-16 text-center">
-          <button className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-8 py-3 text-sm font-medium text-slate-900 shadow-sm transition-all hover:border-primary hover:text-primary hover:bg-primary/5">
+          <Link href="/portfolio" className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-8 py-3 text-sm font-medium text-slate-900 shadow-sm transition-all hover:border-primary hover:text-primary hover:bg-primary/5">
             {t.portfolio.cta}
-          </button>
+          </Link>
         </div>
 
       </div>
