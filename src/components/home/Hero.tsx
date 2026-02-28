@@ -7,11 +7,11 @@ export default function Hero() {
   return (
     <section className="relative h-[85vh] w-full overflow-hidden">
       <Image
-        src="/hero.png"
+        src="/hero.jpg"
         alt="Fine art portrait during golden hour"
         fill
         priority
-        className="object-cover"
+        className="object-cover object-[50%_15%]"
       />
 
       <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/40" />

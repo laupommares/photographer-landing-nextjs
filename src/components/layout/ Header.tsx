@@ -1,13 +1,13 @@
 "use client";
 
 import { dictionary } from "@/lib/dictionary";
+import { useLanguage } from "@/context/LanguageContext";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
 export default function Header() {
-  const [lang, setLang] = useState<"es" | "en">("es");
-
+  const { lang, setLang } = useLanguage();
   const t = dictionary[lang];
 
   return (

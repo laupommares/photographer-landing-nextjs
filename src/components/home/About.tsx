@@ -3,12 +3,11 @@
 import { dictionary } from "@/lib/dictionary";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function About() {
-    const [lang, setLang] = useState<"es" | "en">("es");
-  
-    const t = dictionary[lang];
+  const { lang } = useLanguage();
+  const t = dictionary[lang];
   return (
     <section id="about" className="bg-[#F9F7F2] py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -18,7 +17,7 @@ export default function About() {
           <div className="relative">
             <div className="aspect-[4/5] w-full overflow-hidden rounded-2xl bg-gray-200 shadow-xl">
               <Image
-                src=""
+                src="/sofia-capuano.jpeg"
                 alt="Professional female photographer smiling gently holding a vintage camera"
                 fill
                 className="object-cover object-center transition-transform duration-700 hover:scale-105"
@@ -60,16 +59,16 @@ export default function About() {
                   500+
                 </span>
                 <span className="text-sm uppercase tracking-wider text-slate-500">
-                  Stories Told
+                  {t.about.stories.label}
                 </span>
               </div>
 
               <div className="flex flex-col gap-1">
                 <span className="font-serif text-3xl font-medium text-primary">
-                  8+
+                  10+
                 </span>
                 <span className="text-sm uppercase tracking-wider text-slate-500">
-                  Years Experience
+                  {t.about.experience.label}
                 </span>
               </div>
 
@@ -78,7 +77,7 @@ export default function About() {
                   12
                 </span>
                 <span className="text-sm uppercase tracking-wider text-slate-500">
-                  Destinations
+                  {t.about.destinations.label}
                 </span>
               </div>
             </div>
