@@ -4,7 +4,7 @@ export const dictionary = {
             linkAbout: "Sobre mi",
             linkProcess: "Proceso",
             linkContact: "Contacto",
-            cta: "Contratar servicio",
+            cta: "Contratar servicios",
         },
         hero: {
             heading: "Historias que merecen",
