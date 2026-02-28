@@ -120,7 +120,7 @@ export default function Header() {
                 Portfolio
               </Link>
 
-              <Link href="#services"
+              <Link href="#process"
                 onClick={() => setIsOpen(false)}
                 className="text-base font-medium hover:text-primary transition-colors">
                 {t.header.linkProcess}
