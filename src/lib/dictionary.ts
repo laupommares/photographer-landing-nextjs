@@ -37,44 +37,51 @@ export const dictionary = {
         process: {
             heading: "La Experiencia",
             subtitle:
-              "Un recorrido cuidado y armonioso desde nuestro primer encuentro hasta la entrega final de tus recuerdos.",
+                "Un recorrido cuidado y armonioso desde nuestro primer encuentro hasta la entrega final de tus recuerdos.",
             steps: [
-              {
-                title: "Conexión Inicial",
-                description:
-                  "Comenzamos con una conversación cercana donde escucho tu historia, tus ideas y lo que deseas transmitir. Este primer encuentro nos permite crear una visión compartida y auténtica.",
-              },
-              {
-                title: "La Sesión",
-                description:
-                  "Un espacio natural y relajado donde las emociones fluyen sin forzar nada. Te guío con sutileza para capturar gestos sinceros, miradas cómplices y momentos llenos de verdad.",
-              },
-              {
-                title: "Entrega",
-                description:
-                  "Recibirás una galería cuidadosamente editada, con imágenes en alta resolución listas para conservar, compartir e imprimir. Recuerdos pensados para perdurar en el tiempo.",
-              },
+                {
+                    title: "Conexión Inicial",
+                    description:
+                        "Comenzamos con una conversación cercana donde escucho tu historia, tus ideas y lo que deseas transmitir. Este primer encuentro nos permite crear una visión compartida y auténtica.",
+                },
+                {
+                    title: "La Sesión",
+                    description:
+                        "Un espacio natural y relajado donde las emociones fluyen sin forzar nada. Te guío con sutileza para capturar gestos sinceros, miradas cómplices y momentos llenos de verdad.",
+                },
+                {
+                    title: "Entrega",
+                    description:
+                        "Recibirás una galería cuidadosamente editada, con imágenes en alta resolución listas para conservar, compartir e imprimir. Recuerdos pensados para perdurar en el tiempo.",
+                },
             ],
-          },
-          footer: {
+        },
+        cta: {
+            heading: "¿Lista para contar tu historia?",
+            subtitle:
+                "Trabajo con un número limitado de sesiones al año para asegurar que cada historia reciba toda mi atención creativa. Creemos algo hermoso juntas.",
+            primaryButton: "Reservar Sesión",
+            secondaryButton: "Contactarme"
+        },
+        footer: {
             brand: "Tu Nombre",
             description: "Fotografía fine art capturando historias con luz natural y emoción auténtica.",
             navigation: "Navegación",
             contact: "Contacto",
             email: "hello@tunombre.com",
-            phone: "+54 9 11 0000 0000",
-            instagramUrl: "https://instagram.com/tunombre",
+            phone: "+34 611 328596",
+            instagramUrl: "https://instagram.com/sofiacapuanoph",
             rights: "Todos los derechos reservados.",
             signature: "Diseñado con intención.",
             links: {
-              about: "Sobre mí",
-              portfolio: "Portafolio",
-              process: "Proceso",
-              contact: "Contacto",
+                about: "Sobre mí",
+                portfolio: "Portafolio",
+                process: "Proceso",
+                contact: "Contacto",
             }
-          }
+        }
     },
-    
+
     en: {
         header: {
             linkAbout: "About",
@@ -113,24 +120,31 @@ export const dictionary = {
         process: {
             heading: "The Experience",
             subtitle:
-              "A thoughtful and seamless journey from our first conversation to the final delivery of your memories.",
+                "A thoughtful and seamless journey from our first conversation to the final delivery of your memories.",
             steps: [
-              {
-                title: "Initial Connection",
-                description:
-                  "We begin with a warm conversation where I listen to your story, your ideas, and what you wish to express. This first step allows us to build a shared and authentic vision.",
-              },
-              {
-                title: "The Session",
-                description:
-                  "A natural and relaxed space where emotions unfold effortlessly. I gently guide you to capture sincere gestures, meaningful glances, and moments filled with truth.",
-              },
-              {
-                title: "Delivery",
-                description:
-                  "You will receive a carefully edited online gallery with high-resolution images ready to preserve, share, and print — memories designed to last a lifetime.",
-              },
+                {
+                    title: "Initial Connection",
+                    description:
+                        "We begin with a warm conversation where I listen to your story, your ideas, and what you wish to express. This first step allows us to build a shared and authentic vision.",
+                },
+                {
+                    title: "The Session",
+                    description:
+                        "A natural and relaxed space where emotions unfold effortlessly. I gently guide you to capture sincere gestures, meaningful glances, and moments filled with truth.",
+                },
+                {
+                    title: "Delivery",
+                    description:
+                        "You will receive a carefully edited online gallery with high-resolution images ready to preserve, share, and print — memories designed to last a lifetime.",
+                },
             ],
+        },
+        cta: {
+            heading: "¿Lista para contar tu historia?",
+            subtitle:
+                "Trabajo con un número limitado de sesiones al año para asegurar que cada historia reciba toda mi atención creativa. Creemos algo hermoso juntas.",
+            primaryButton: "Reservar Sesión",
+            secondaryButton: "Contactarme"
         },
         footer: {
             brand: "Tu Nombre",
@@ -138,16 +152,16 @@ export const dictionary = {
             navigation: "Navegación",
             contact: "Contacto",
             email: "hello@tunombre.com",
-            phone: "+54 9 11 0000 0000",
-            instagramUrl: "https://instagram.com/tunombre",
+            phone: "+34 611 328596",
+            instagramUrl: "https://instagram.com/sofiacapuanoph",
             rights: "Todos los derechos reservados.",
             signature: "Diseñado con intención.",
             links: {
-              about: "Sobre mí",
-              portfolio: "Portafolio",
-              process: "Proceso",
-              contact: "Contacto",
+                about: "Sobre mí",
+                portfolio: "Portafolio",
+                process: "Proceso",
+                contact: "Contacto",
             }
-        }  
+        }
     },
 };

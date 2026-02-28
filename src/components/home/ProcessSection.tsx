@@ -5,7 +5,7 @@ import { processSteps } from "@/lib/data"
 import { dictionary } from "@/lib/dictionary";
 
 export default function ProcessSection() {
-  const t = dictionary.es // o dinámico si luego lo haces i18n
+  const t = dictionary.es
 
   return (
     <section className="bg-background-light py-24" id="process">
