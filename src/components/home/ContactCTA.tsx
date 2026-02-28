@@ -23,11 +23,11 @@ export default function CTASection() {
         </p>
 
         <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <button className="min-w-[180px] rounded-lg bg-primary px-8 py-4 text-base font-bold text-white shadow-lg transition-all hover:scale-105 hover:bg-primary/90">
+          <button className="min-w-[180px] rounded-lg bg-primary px-8 py-4 text-base font-bold text-white shadow-lg transition-all hover:scale-105 hover:bg-primary/90 cursor-pointer">
             {t.cta.primaryButton}
           </button>
 
-          <button className="min-w-[180px] rounded-lg border border-slate-200 bg-white px-8 py-4 text-base font-bold text-slate-900 transition-all hover:border-primary hover:text-primary">
+          <button className="min-w-[180px] rounded-lg border border-slate-200 bg-white px-8 py-4 text-base font-bold text-slate-900 transition-all hover:border-primary hover:text-primary cursor-pointer">
             {t.cta.secondaryButton}
           </button>
         </div>
