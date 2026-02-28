@@ -83,7 +83,7 @@ export default function Header() {
               </button>
             </div>
 
-            <Link href="https://wa.me/+34611328596" className="rounded-lg bg-primary px-5 py-2.5 text-sm font-bold text-white transition-all hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20 cursor-pointer">
+            <Link href={whatsappLink} className="rounded-lg bg-primary px-5 py-2.5 text-sm font-bold text-white transition-all hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20 cursor-pointer">
               {t.header.cta}
             </Link>
           </div>
