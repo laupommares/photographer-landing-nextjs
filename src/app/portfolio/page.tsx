@@ -18,21 +18,21 @@ const works = [
     title: "Eternal Vows",
     location: "Tuscany, Italy",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDaSWQXFlDpr3nBP6Sq2-9ok4WKwh4SRhFOpW3vu0fjmdGJd0IzRWnNNhAPgSdSCgCFObhxwYSmjlYJ2dQl9J2deTQT5XetkzPN5i9RJOG6aQqLoEBci_qZKAoTTpgKuQJ7ekbWvFj9vvAKENw-ZiAYDxOD23hl9391YZ55k2uACER-6K6PAkw-ih-QPVHC2sufHKsjL6AykY5wKrP8Y-tCBMBKDFwojoQHyvG871UCpDxueJyPerchoqrq3nQvdSKMEi0WBo1YLA",
+      "/beach.jpeg",
   },
   {
     category: "Boat Trips",
     title: "Sunset Voyage",
     location: "Amalfi Coast",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDVZd9gxzMQpSm-fJn7-KB7K2HfGtSVjjWfrjX-w0Z55hvpppy2ZmSk_WAAkBr6Ulv0BJ0XWSF6X_JPN03eeAt0wS5qbsjlyWnb1Q_Ll5c7aWr2KMtjDSFWSyN_1AI0ygLzCXJkk3jtSxT5kjp5Xyu7vGvyw1SGuqZGa7YctQkkn25kt_0Xg62mJjlY3p73YmaT5xk6YsdUAQBEfUEvICl-kyTzPdgEnmy3ZnIQgH0qNwCo3PYKIafTwewiKe3_Cbpqvim-tQw9pQ",
+      "/portrait.jpeg",
   },
   {
     category: "Events",
     title: "Annual Gala",
     location: "New York City",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDTDWVXd_5kK149KYT9NS9iEu394FIxRKH7W1-Mwi-xAuLsLnj3NsW0UoZQKW-h28fHANlVbX3hpOH_bPYGM7bdC97f8b4QgPTJI6cGfgh0iptk1BaQnf8pD9O9BBNz2YFWlwmBHnIUZof9yAtLws5fm7kymIEIWwQ1VQUlFbZap9vdnFhF8Hw8soaikmwyegTIxszpfQPgFXmWPxxZ93XvgQGT5bBSJXJbwUtAJEIN2tMRD0zzeYQi3PXcJcLEdtKfMRpNK3H_eg",
+      "/events.jpeg",
   },
 ];
 
