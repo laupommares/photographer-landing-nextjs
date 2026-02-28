@@ -22,8 +22,8 @@ export default function Hero() {
         </span>
 
         <h1 className="font-serif text-5xl md:text-7xl leading-tight">
-          {t.hero.title1} <br/>
-          <span className="italic">{t.hero.title2}</span>
+          {t.hero.heading} <br/>
+          <span className="italic">{t.hero.heading2}</span>
         </h1>
 
         <p className="mt-6 mb-10 max-w-lg text-lg text-white/90">

@@ -1,7 +1,14 @@
+"use client";
+
+import { dictionary } from "@/lib/dictionary";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function About() {
+    const [lang, setLang] = useState<"es" | "en">("es");
+  
+    const t = dictionary[lang];
   return (
     <section id="about" className="bg-[#F9F7F2] py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -28,27 +35,21 @@ export default function About() {
             <div className="mb-6 flex items-center gap-2 text-primary">
               <span className="h-px w-8 bg-primary" />
               <span className="text-sm font-bold uppercase tracking-widest">
-                About Sofía
+                {t.about.eyebrow}
               </span>
             </div>
 
             <h2 className="mb-6 font-serif text-4xl font-medium leading-tight text-slate-900 sm:text-5xl">
-              The Artist Behind <br className="hidden lg:block" />
-              the Lens
+              {t.about.heading} <br className="hidden lg:block" />
+              {t.about.heading2}
             </h2>
 
             <div className="space-y-6 text-lg leading-relaxed text-slate-600">
               <p>
-                Specializing in natural light and candid emotion, I strive to
-                capture the fleeting moments that make life beautiful. My
-                approach is unobtrusive and warm, creating a relaxed atmosphere
-                where you can be your true self.
+                {t.about.description}
               </p>
-
               <p>
-                Whether it's the quiet anticipation before a wedding ceremony or
-                the chaotic joy of a family gathering, my goal is to deliver
-                images that feel as genuine as the memories they preserve.
+                {t.about.description2}
               </p>
             </div>
 
