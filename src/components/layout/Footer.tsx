@@ -75,7 +75,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="flex flex-col items-center justify-between gap-4 text-xs text-slate-500 md:flex-row">
           <p>
-            © {new Date().getFullYear()} {t.footer.brand}. {t.footer.rights}
+            © {new Date().getFullYear()} . Sofía Capuano. {t.footer.rights}
           </p>
         </div>
 

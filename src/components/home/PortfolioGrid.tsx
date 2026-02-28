@@ -66,7 +66,7 @@ export default function PortfolioGrid() {
             <div
               key={item.id}
               className={`group relative overflow-hidden rounded-xl cursor-pointer
-                ${item.tall ? "lg:row-span-2 min-h-[400px]" : "aspect-square"}`}>
+                ${item.tall ? "lg:row-span-2 min-h-100" : "aspect-square"}`}>
               {/* Image */}
               <Image
                 src={item.image}
@@ -75,7 +75,7 @@ export default function PortfolioGrid() {
                 className="object-cover transition-transform duration-700 group-hover:scale-105"/>
 
               {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-80 transition-opacity group-hover:opacity-100" />
+              <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/0 to-black/0 opacity-80 transition-opacity group-hover:opacity-100" />
 
               {/* Text */}
               <div className="absolute bottom-0 left-0 p-6 md:p-8">

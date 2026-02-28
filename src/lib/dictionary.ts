@@ -138,11 +138,10 @@ export const dictionary = {
             ],
         },
         cta: {
-            heading: "¿Lista para contar tu historia?",
-            subtitle:
-                "Trabajo con un número limitado de sesiones al año para asegurar que cada historia reciba toda mi atención creativa. Creemos algo hermoso juntas.",
-            primaryButton: "Reservar Sesión",
-            secondaryButton: "Contactarme"
+            heading: "Ready to tell your story?",
+            subtitle: "I take on a limited number of bookings per year to ensure every client gets my full creative attention. Let's create something beautiful together.",
+            primaryButton: "Book a Session",
+            secondaryButton: "Contact me"
         },
         footer: {
             description: "Fotografía fine art capturando historias con luz natural y emoción auténtica.",
@@ -151,7 +150,6 @@ export const dictionary = {
             email: "hello@tunombre.com",
             instagramUrl: "https://instagram.com/sofiacapuanoph",
             rights: "Todos los derechos reservados.",
-            signature: "Diseñado con intención.",
             links: {
                 about: "Sobre mí",
                 portfolio: "Portafolio",
