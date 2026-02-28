@@ -7,14 +7,14 @@ export default function Hero() {
   return (
     <section className="relative h-[85vh] w-full overflow-hidden">
       <Image
-        src="/hero.jpg"
+        src="/hero2.jpeg"
         alt="Fine art portrait during golden hour"
         fill
         priority
         className="object-cover object-[50%_15%]"
       />
 
-      <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/40" />
+      <div className="absolute inset-0 bg-linear-to-b from-black/20 via-black/0 to-black/60" />
 
       <div className="relative flex h-full flex-col items-center justify-center text-center text-white px-6">
         <span className="mb-4 rounded-full bg-white/20 px-4 py-1.5 text-xs uppercase tracking-widest backdrop-blur-sm">

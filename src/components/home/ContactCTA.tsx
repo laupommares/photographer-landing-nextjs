@@ -2,8 +2,8 @@ export default function CTASection() {
     return (
       <section
         id="contact"
-        className="relative overflow-hidden bg-white py-24"
-      >
+        className="relative overflow-hidden bg-white py-24">
+            
         {/* Decorative Blurs */}
         <div className="absolute left-0 top-1/2 h-64 w-32 -translate-y-1/2 rounded-r-full bg-primary/5 blur-2xl" />
         <div className="absolute right-0 top-1/2 h-64 w-32 -translate-y-1/2 rounded-l-full bg-warm-grey/10 blur-2xl" />
