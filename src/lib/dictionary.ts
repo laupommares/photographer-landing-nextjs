@@ -29,6 +29,33 @@ export const dictionary = {
             },
             ctaLink: "Leer Bio Completa"
         },
+        portfolio: {
+            heading: "Fragmentos de Vida",
+            subtitle: "Historias de amor, retratos llenos de sensibilidad y celebraciones inolvidables.",
+            cta: "Ver portfolio completo"
+        },
+        process: {
+            heading: "La Experiencia",
+            subtitle:
+              "Un recorrido cuidado y armonioso desde nuestro primer encuentro hasta la entrega final de tus recuerdos.",
+            steps: [
+              {
+                title: "Conexión Inicial",
+                description:
+                  "Comenzamos con una conversación cercana donde escucho tu historia, tus ideas y lo que deseas transmitir. Este primer encuentro nos permite crear una visión compartida y auténtica.",
+              },
+              {
+                title: "La Sesión",
+                description:
+                  "Un espacio natural y relajado donde las emociones fluyen sin forzar nada. Te guío con sutileza para capturar gestos sinceros, miradas cómplices y momentos llenos de verdad.",
+              },
+              {
+                title: "Entrega",
+                description:
+                  "Recibirás una galería cuidadosamente editada, con imágenes en alta resolución listas para conservar, compartir e imprimir. Recuerdos pensados para perdurar en el tiempo.",
+              },
+            ],
+          },
     },
     en: {
         header: {
@@ -60,5 +87,32 @@ export const dictionary = {
             },
             ctaLink: "Read Full Bio"
         },
+        portfolio: {
+            heading: "Selected Works",
+            subtitle: "A curation of love stories, quiet portraits, and joyous celebrations.",
+            cta: "View Complete Portfolio"
+        },
+        process: {
+            heading: "The Experience",
+            subtitle:
+              "A thoughtful and seamless journey from our first conversation to the final delivery of your memories.",
+            steps: [
+              {
+                title: "Initial Connection",
+                description:
+                  "We begin with a warm conversation where I listen to your story, your ideas, and what you wish to express. This first step allows us to build a shared and authentic vision.",
+              },
+              {
+                title: "The Session",
+                description:
+                  "A natural and relaxed space where emotions unfold effortlessly. I gently guide you to capture sincere gestures, meaningful glances, and moments filled with truth.",
+              },
+              {
+                title: "Delivery",
+                description:
+                  "You will receive a carefully edited online gallery with high-resolution images ready to preserve, share, and print — memories designed to last a lifetime.",
+              },
+            ],
+          },
     },
 };

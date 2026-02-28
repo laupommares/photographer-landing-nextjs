@@ -1,3 +1,7 @@
+"use client";
+
+import { useLanguage } from "@/context/LanguageContext"
+import { dictionary } from "@/lib/dictionary"
 import Image from "next/image"
 
 type PortfolioItem = {
@@ -13,31 +17,33 @@ const portfolioItems: PortfolioItem[] = [
     id: 1,
     title: "Weddings",
     category: "Gallery",
-    image: "/portfolio/wedding.jpg",
+    image: "/hero.jpg",
     tall: true,
   },
   {
     id: 2,
     title: "Beach Books",
     category: "Editorial",
-    image: "/portfolio/beach.jpg",
+    image: "/beach.jpeg",
   },
   {
     id: 3,
-    title: "Events",
-    category: "Lifestyle",
-    image: "/portfolio/events.jpg",
+    title: "Portraiture",
+    category: "Portraiture",
+    image: "/portrait.jpeg",
     tall: true,
   },
   {
     id: 4,
-    title: "Studio",
-    category: "Portraiture",
-    image: "/portfolio/portrait.jpg",
+    title: "Events",
+    category: "Events",
+    image: "/events.jpeg",
   },
 ]
 
 export default function PortfolioGrid() {
+  const { lang } = useLanguage();
+  const t = dictionary[lang];
   return (
     <section id="portfolio" className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -45,10 +51,10 @@ export default function PortfolioGrid() {
         {/* Heading */}
         <div className="mb-16 text-center">
           <h2 className="font-serif text-4xl font-medium text-slate-900 sm:text-5xl mb-4">
-            Selected Works
+            {t.portfolio.heading}
           </h2>
           <p className="max-w-xl mx-auto text-slate-500">
-            A curation of love stories, quiet portraits, and joyous celebrations.
+            {t.portfolio.subtitle}
           </p>
         </div>
 
@@ -58,18 +64,14 @@ export default function PortfolioGrid() {
           {portfolioItems.map((item) => (
             <div
               key={item.id}
-              className={`
-                group relative overflow-hidden rounded-xl cursor-pointer
-                ${item.tall ? "lg:row-span-2 min-h-[400px]" : "aspect-square"}
-              `}
-            >
+              className={`group relative overflow-hidden rounded-xl cursor-pointer
+                ${item.tall ? "lg:row-span-2 min-h-[400px]" : "aspect-square"}`}>
               {/* Image */}
               <Image
                 src={item.image}
                 alt={item.title}
                 fill
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
-              />
+                className="object-cover transition-transform duration-700 group-hover:scale-105"/>
 
               {/* Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-80 transition-opacity group-hover:opacity-100" />
@@ -91,7 +93,7 @@ export default function PortfolioGrid() {
         {/* CTA */}
         <div className="mt-16 text-center">
           <button className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-8 py-3 text-sm font-medium text-slate-900 shadow-sm transition-all hover:border-primary hover:text-primary hover:bg-primary/5">
-            View Complete Portfolio
+            {t.portfolio.cta}
           </button>
         </div>
 

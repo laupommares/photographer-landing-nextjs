@@ -65,13 +65,13 @@ export default function Header() {
             <div className="flex items-center gap-2 text-sm">
               <button
                 onClick={() => setLang("es")}
-                className={lang === "es" ? "font-bold text-primary" : ""}>
+                className={lang === "es" ? "font-bold text-primary" : "cursor-pointer"}>
                 ES
               </button>
               <span>/</span>
               <button
                 onClick={() => setLang("en")}
-                className={lang === "en" ? "font-bold text-primary" : ""}>
+                className={lang === "en" ? "font-bold text-primary" : "cursor-pointer"}>
                 EN
               </button>
             </div>
