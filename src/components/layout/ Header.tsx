@@ -96,13 +96,13 @@ export default function Header() {
                 {lang === "es" ? "ES" : "EN"}
               </button>
             </div>
-            <button
+            <Link href={whatsappLink} 
               aria-label="Book session"
               className="bg-primary transition-colors hover:text-primary/80 cursor-pointer py-2.5 px-5 flex items-center rounded-lg">
               <span className="material-symbols-outlined text-white">
                 calendar_month
               </span>
-            </button>
+            </Link>
           </div>
 
         </div>
