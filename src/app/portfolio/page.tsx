@@ -20,7 +20,7 @@ const beachWorks = Array.from({ length: 15 }, (_, index) => ({
   category: "Beach",
   image: `/beach-${index + 1}.JPG`,
 }));
-const maternityWorks = Array.from({ length: 7 }, (_, index) => ({
+const maternityWorks = Array.from({ length: 6 }, (_, index) => ({
   category: "Maternity",
   image: `/maternity-${index + 1}.JPG`,
 }));
