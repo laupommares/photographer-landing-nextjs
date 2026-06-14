@@ -101,7 +101,7 @@ export const dictionary = {
             heading: "Stories worth",
             heading2: "remembering",
             subtitle: "Creating authentic, timeless imagery that reflects your essence with sensitivity and style.",
-            cta: "VIew portfolio",
+            cta: "View portfolio",
         },
         about: {
             eyebrow: "About Sofía",
@@ -122,6 +122,7 @@ export const dictionary = {
         },
         portfolio: {
             heading: "Portfolio",
+            cta: "View portfolio",
             subtitle:
               "A collection of images that reflect my style, sensitivity, and approach to storytelling.",
           
