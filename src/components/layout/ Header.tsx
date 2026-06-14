@@ -147,10 +147,9 @@ export default function Header() {
                 {t.header.linkContact}
               </Link>
 
-              <button onClick={() => setIsOpen(false)}
-                className="mt-4 rounded-lg bg-primary px-5 py-3 text-sm font-bold text-white transition-all hover:bg-primary/90">
-                {t.header.cta}
-              </button>
+            <Link href={whatsappLink} className="rounded-lg bg-primary px-5 py-2.5 text-center text-sm font-bold text-white transition-all hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20 cursor-pointer">
+              {t.header.cta}
+            </Link>
 
             </div>
           </div>

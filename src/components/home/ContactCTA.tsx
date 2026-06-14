@@ -2,10 +2,18 @@
 
 import { useLanguage } from "@/context/LanguageContext";
 import { dictionary } from "@/lib/dictionary";
+import Link from "next/link";
 
 export default function CTASection() {
   const { lang } = useLanguage();
   const t = dictionary[lang];
+  const whatsappMessage =
+  lang === "es"
+    ? "Hola Sofi! Me gustaría reservar una sesión."
+    : "Hi Sofi! I would love to book a session.";
+
+const whatsappLink = `https://wa.me/34611328596?text=${encodeURIComponent(whatsappMessage)}`;
+
     return (
       <section
       id="contact"
@@ -23,13 +31,13 @@ export default function CTASection() {
         </p>
 
         <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <button className="min-w-45 rounded-lg bg-primary px-8 py-4 text-base font-bold text-white shadow-lg transition-all hover:scale-105 hover:bg-primary/90 cursor-pointer">
+          <Link href={whatsappLink}  className="min-w-45 rounded-lg bg-primary px-8 py-4 text-base font-bold text-white shadow-lg transition-all hover:scale-105 hover:bg-primary/90 cursor-pointer">
             {t.cta.primaryButton}
-          </button>
+          </Link>
 
-          <button className="min-w-45 rounded-lg border border-slate-200 bg-white px-8 py-4 text-base font-bold text-slate-900 transition-all hover:border-primary hover:text-primary cursor-pointer">
+          <Link href={whatsappLink} className="min-w-45 rounded-lg border border-slate-200 bg-white px-8 py-4 text-base font-bold text-slate-900 transition-all hover:border-primary hover:text-primary cursor-pointer">
             {t.cta.secondaryButton}
-          </button>
+          </Link>
         </div>
       </div>
     </section>
