@@ -66,7 +66,7 @@ export default function BookingForm() {
         name="message"
         placeholder="Tell me about your vision..."
         onChange={handleChange}
-        className="input min-h-[120px]"
+        className="input min-h-30"
       />
 
       <button

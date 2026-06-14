@@ -27,13 +27,23 @@ export const dictionary = {
             destinations: {
                 label: "Destinos",
             },
-            ctaLink: "Leer Bio Completa"
+            ctaLink: "Contactame"
         },
         portfolio: {
-            heading: "Fragmentos de Vida",
-            subtitle: "Historias de amor, retratos llenos de sensibilidad y celebraciones inolvidables.",
-            cta: "Ver portfolio completo"
-        },
+            heading: "Portfolio",
+            subtitle:
+              "Una selección de imágenes que reflejan mi estilo, sensibilidad y forma de contar historias.",
+            cta: "Ver portfolio",
+          
+            categories: {
+              all: "Todos",
+              weddings: "Bodas",
+              couples: "Parejas",
+              portraits: "Retratos",
+              events: "Eventos",
+              travel: "Viajes",
+            },
+          },
         process: {
             heading: "La Experiencia",
             subtitle:
@@ -67,7 +77,7 @@ export const dictionary = {
             description: "Fotografía fine art capturando historias con luz natural y emoción auténtica.",
             navigation: "Navegación",
             contact: "Contacto",
-            email: "hello@tunombre.com",
+            email: "sofialeilacapuano@gmail.com",
             instagramUrl: "https://instagram.com/sofiacapuanoph",
             rights: "Todos los derechos reservados.",
             signature: "Diseñado con intención.",
@@ -111,10 +121,19 @@ export const dictionary = {
             ctaLink: "Read Full Bio"
         },
         portfolio: {
-            heading: "Selected Works",
-            subtitle: "A curation of love stories, quiet portraits, and joyous celebrations.",
-            cta: "View Complete Portfolio"
-        },
+            heading: "Portfolio",
+            subtitle:
+              "A collection of images that reflect my style, sensitivity, and approach to storytelling.",
+          
+            categories: {
+              all: "All",
+              weddings: "Weddings",
+              couples: "Couples",
+              portraits: "Portraits",
+              events: "Events",
+              travel: "Travel",
+            },
+          },
         process: {
             heading: "The Experience",
             subtitle:
@@ -144,17 +163,18 @@ export const dictionary = {
             secondaryButton: "Contact me"
         },
         footer: {
-            description: "Fotografía fine art capturando historias con luz natural y emoción auténtica.",
-            navigation: "Navegación",
-            contact: "Contacto",
-            email: "hello@tunombre.com",
+            description: "Fine art photography capturing stories through natural light and genuine emotion.",
+            navigation: "Navigation",
+            contact: "Contact",
+            email: "sofialeilacapuano@gmail.com",
             instagramUrl: "https://instagram.com/sofiacapuanoph",
-            rights: "Todos los derechos reservados.",
+            rights: "All rights reserved.",
+            signature: "Designed with intention.",
             links: {
-                about: "Sobre mí",
-                portfolio: "Portafolio",
-                process: "Proceso",
-                contact: "Contacto",
+                about: "About",
+                portfolio: "Portfolio",
+                process: "Process",
+                contact: "Contact",
             }
         }
     },

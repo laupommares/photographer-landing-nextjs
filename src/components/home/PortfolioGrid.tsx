@@ -17,20 +17,20 @@ const portfolioItems: PortfolioItem[] = [
   {
     id: 1,
     title: "Weddings",
-    category: "Gallery",
+    category: "Weddings",
     image: "/hero.jpg",
     tall: true,
   },
   {
     id: 2,
     title: "Beach Books",
-    category: "Editorial",
+    category: "Beach",
     image: "/beach.jpeg",
   },
   {
     id: 3,
-    title: "Portraiture",
-    category: "Portraiture",
+    title: "Board trips",
+    category: "Board trips",
     image: "/portrait.jpeg",
     tall: true,
   },
@@ -82,9 +82,6 @@ export default function PortfolioGrid() {
                 <p className="mb-1 text-xs font-bold uppercase tracking-widest text-white/80">
                   {item.category}
                 </p>
-                <h3 className="font-serif text-2xl md:text-3xl text-white">
-                  {item.title}
-                </h3>
               </div>
             </div>
           ))}

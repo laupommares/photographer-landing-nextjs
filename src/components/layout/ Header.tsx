@@ -36,11 +36,15 @@ export default function Header() {
 
           {/* Left Nav */}
           <nav className="hidden text-text items-center gap-8 lg:flex">
+            <Link href="/"
+              className="text-sm tracking-wide transition-colors hover:text-primary">
+              Home
+            </Link>
             <Link href="/portfolio"
               className="text-sm tracking-wide transition-colors hover:text-primary">
               Portfolio
             </Link>
-            <Link href="#about"
+            <Link href="/#about"
               className="text-sm tracking-wide transition-colors hover:text-primary">
               {t.header.linkAbout}
             </Link>
@@ -61,11 +65,11 @@ export default function Header() {
 
           {/* Right Nav */}
           <div className="hidden items-center text-text gap-8 lg:flex">
-            <Link href="#process"
+            <Link href="/#process"
               className="text-sm font-medium tracking-wide transition-colors hover:text-primary">
               {t.header.linkProcess}
             </Link>
-            <Link href="#contact"
+            <Link href="/#contact"
               className="text-sm font-medium tracking-wide transition-colors hover:text-primary">
               {t.header.linkContact}
             </Link>
@@ -112,36 +116,40 @@ export default function Header() {
         <div className="lg:hidden fixed top-20 left-0 w-full z-40">
           <div className="bg-white shadow-xl border-t border-sand">
             <div className="px-6 py-8 flex flex-col gap-6 text-text">
-
+              <Link
+                href="/"
+                onClick={() => setIsOpen(false)}
+                className="text-base font-medium hover:text-primary transition-colors" >
+                Home
+              </Link>
               <Link
                 href="/portfolio"
                 onClick={() => setIsOpen(false)}
                 className="text-base font-medium hover:text-primary transition-colors" >
                 Portfolio
               </Link>
+              <Link
+                href="/#about"
+                onClick={() => setIsOpen(false)}
+                className="text-base font-medium hover:text-primary transition-colors" >
+                {t.header.linkAbout}
+              </Link>
 
-              <Link href="#process"
+              <Link href="/#process"
                 onClick={() => setIsOpen(false)}
                 className="text-base font-medium hover:text-primary transition-colors">
                 {t.header.linkProcess}
               </Link>
 
-              <Link href="#about"
-                onClick={() => setIsOpen(false)}
-                className="text-base font-medium hover:text-primary transition-colors">
-                {t.header.linkAbout}
-              </Link>
-
-              <Link href="#contact"
+              <Link href="/#contact"
                 onClick={() => setIsOpen(false)}
                 className="text-base font-medium hover:text-primary transition-colors">
                 {t.header.linkContact}
               </Link>
 
-              <button onClick={() => setIsOpen(false)}
-                className="mt-4 rounded-lg bg-primary px-5 py-3 text-sm font-bold text-white transition-all hover:bg-primary/90">
-                {t.header.cta}
-              </button>
+            <Link href={whatsappLink} className="rounded-lg bg-primary px-5 py-2.5 text-center text-sm font-bold text-white transition-all hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20 cursor-pointer">
+              {t.header.cta}
+            </Link>
 
             </div>
           </div>
