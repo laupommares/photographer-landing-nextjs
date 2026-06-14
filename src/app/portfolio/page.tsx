@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Header from "@/components/layout/ Header";
 import Footer from "@/components/layout/Footer";
 import Image from "next/image";
@@ -6,36 +9,45 @@ const categories = [
   "All Works",
   "Weddings",
   "Beach",
-  "Birthdays",
+  "Maternity",
   "Events",
-  "Boat Trips",
 ];
-
+const weddingWorks = Array.from({ length: 23 }, (_, index) => ({
+  category: "Weddings",
+  image: `/weddings-${index + 1}.jpg`,
+}));
+const beachWorks = Array.from({ length: 15 }, (_, index) => ({
+  category: "Beach",
+  image: `/beach-${index + 1}.JPG`,
+}));
+const maternityWorks = Array.from({ length: 7 }, (_, index) => ({
+  category: "Maternity",
+  image: `/maternity-${index + 1}.JPG`,
+}));
+const eventsWorks = Array.from({ length: 16 }, (_, index) => ({
+  category: "Events",
+  image: `/events-${index + 1}.JPG`,
+}));
 const works = [
-  {
-    category: "Weddings",
-    title: "Eternal Vows",
-    location: "Tuscany, Italy",
-    image:
-      "/beach.jpeg",
-  },
+  ...weddingWorks,
+  ...beachWorks,
+  ...maternityWorks,
+  ...eventsWorks,
   {
     category: "Boat Trips",
-    title: "Sunset Voyage",
-    location: "Amalfi Coast",
     image:
       "/portrait.jpeg",
-  },
-  {
-    category: "Events",
-    title: "Annual Gala",
-    location: "New York City",
-    image:
-      "/events.jpeg",
   },
 ];
 
 export default function PortfolioPage() {
+  const [activeCategory, setActiveCategory] = useState("All Works");
+  const filteredWorks =
+  activeCategory === "All Works"
+    ? works
+    : works.filter(
+        (work) => work.category === activeCategory
+      );
   return (
     <div className="bg-background-light min-h-screen">
       <Header/>
@@ -51,25 +63,28 @@ export default function PortfolioPage() {
         </div>
 
         <div className="flex flex-wrap justify-center gap-4 mb-16">
-          {categories.map((cat, index) => (
+          {categories.map((cat) => (
             <button
               key={cat}
+              onClick={() => setActiveCategory(cat)}
               className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${
-                index === 0
-                  ? "bg-primary text-white shadow-md shadow-primary/20"
-                  : "bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 hover:border-primary hover:text-primary"}`}>
+                activeCategory === cat
+                  ? "bg-primary text-white"
+                  : "bg-white border border-slate-200"
+              }`}
+            >
               {cat}
-            </button>
+            </button> 
           ))}
         </div>
 
         <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
-          {works.map((work, index) => (
+        {filteredWorks.map((work, index) => (
             <div
               key={index}
               className="group relative overflow-hidden rounded-lg break-inside-avoid cursor-pointer">
               <Image src={work.image}
-                alt={work.title}
+                alt={work.image}
                 width={800}
                 height={1000}
                 className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"/>
@@ -78,24 +93,9 @@ export default function PortfolioPage() {
                 <span className="text-primary text-xs font-bold uppercase tracking-wider mb-1">
                   {work.category}
                 </span>
-                <h3 className="text-white text-xl font-medium">
-                  {work.title}
-                </h3>
-                <p className="text-white/80 text-sm mt-1">
-                  {work.location}
-                </p>
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="mt-20 flex justify-center">
-          <button className="flex items-center gap-2 px-8 py-3 rounded-lg border border-slate-300 dark:border-slate-600 text-sm font-semibold tracking-wide hover:border-primary hover:text-primary transition">
-            <span className="material-symbols-outlined text-[20px]">
-              refresh
-            </span>
-            Load More Works
-          </button>
         </div>
       </main>
 

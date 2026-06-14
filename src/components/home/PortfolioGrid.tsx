@@ -82,9 +82,6 @@ export default function PortfolioGrid() {
                 <p className="mb-1 text-xs font-bold uppercase tracking-widest text-white/80">
                   {item.category}
                 </p>
-                <h3 className="font-serif text-2xl md:text-3xl text-white">
-                  {item.title}
-                </h3>
               </div>
             </div>
           ))}

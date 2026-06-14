@@ -30,10 +30,20 @@ export const dictionary = {
             ctaLink: "Contactame"
         },
         portfolio: {
-            heading: "Fragmentos de Vida",
-            subtitle: "Historias de amor, retratos llenos de sensibilidad y celebraciones inolvidables.",
-            cta: "Ver portfolio completo"
-        },
+            heading: "Portfolio",
+            subtitle:
+              "Una selección de imágenes que reflejan mi estilo, sensibilidad y forma de contar historias.",
+            cta: "Ver portfolio",
+          
+            categories: {
+              all: "Todos",
+              weddings: "Bodas",
+              couples: "Parejas",
+              portraits: "Retratos",
+              events: "Eventos",
+              travel: "Viajes",
+            },
+          },
         process: {
             heading: "La Experiencia",
             subtitle:
@@ -111,10 +121,19 @@ export const dictionary = {
             ctaLink: "Read Full Bio"
         },
         portfolio: {
-            heading: "Selected Works",
-            subtitle: "A curation of love stories, quiet portraits, and joyous celebrations.",
-            cta: "View Complete Portfolio"
-        },
+            heading: "Portfolio",
+            subtitle:
+              "A collection of images that reflect my style, sensitivity, and approach to storytelling.",
+          
+            categories: {
+              all: "All",
+              weddings: "Weddings",
+              couples: "Couples",
+              portraits: "Portraits",
+              events: "Events",
+              travel: "Travel",
+            },
+          },
         process: {
             heading: "The Experience",
             subtitle:
