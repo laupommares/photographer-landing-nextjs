@@ -1,6 +1,8 @@
 "use client";
 import { dictionary } from "@/lib/dictionary";
 import { useLanguage } from "@/context/LanguageContext";
+import { FiMail, FiPhone } from "react-icons/fi";
+import { FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   const { lang } = useLanguage();
@@ -14,17 +16,17 @@ export default function Footer() {
         <div className="grid gap-12 md:grid-cols-3">
           
           {/* Brand */}
-          <div>
+          <div className="max-md:text-center">
             <h3 className="font-serif text-2xl text-slate-900 mb-4">
               Sofía Capuano
             </h3>
-            <p className="text-sm text-slate-600 leading-relaxed max-w-sm">
+            <p className="mx-auto max-w-sm text-sm leading-relaxed text-slate-600 md:mx-0">
               {t.footer.description}
             </p>
           </div>
 
           {/* Navigation */}
-          <div>
+          <div className="max-md:text-center">
             <h4 className="text-xs uppercase tracking-widest text-slate-500 mb-4">
               {t.footer.navigation}
             </h4>
@@ -52,24 +54,50 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
-          <div>
-            <h4 className="text-xs uppercase tracking-widest text-slate-500 mb-4">
-              {t.footer.contact}
-            </h4>
-            <ul className="space-y-3 text-sm text-slate-700">
-              <li>{t.footer.email}</li>
-              <li>+34 611 328596</li>
-              <li>
-                <a href="https://instagram.com/sofiacapuanoph"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-primary transition-colors">
-                  Instagram
-                </a>
-              </li>
-            </ul>
-          </div>
+        {/* Contact */}
+        <div className="max-md:text-center">
+          <h4 className="text-xs uppercase tracking-widest text-slate-500 mb-4">
+            {t.footer.contact}
+          </h4>
+
+          <ul className="space-y-4 text-sm text-slate-700">
+
+            <li>
+              <a
+                href={`mailto:${t.footer.email}`}
+                className="flex items-center justify-center gap-3 hover:text-primary transition-colors md:justify-start"
+              >
+                <FiMail className="h-4 w-4 shrink-0" />
+                <span>{t.footer.email}</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://wa.me/34611328596"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-3 hover:text-primary transition-colors md:justify-start"
+              >
+                <FiPhone className="h-4 w-4 shrink-0" />
+                <span>+34 611 328596</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://instagram.com/sofiacapuanoph"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-3 hover:text-primary transition-colors md:justify-start"
+              >
+                <FaInstagram className="h-4 w-4 shrink-0" />
+                <span>@sofiacapuanoph</span>
+              </a>
+            </li>
+
+          </ul>
+        </div>
         </div>
 
         {/* Divider */}
