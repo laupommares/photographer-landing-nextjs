@@ -8,6 +8,12 @@ import { useLanguage } from "@/context/LanguageContext";
 export default function About() {
   const { lang } = useLanguage();
   const t = dictionary[lang];
+  const whatsappMessage =
+  lang === "es"
+    ? "Hola Sofi! Me gustaría reservar una sesión."
+    : "Hi Sofi! I would love to book a session.";
+
+  const whatsappLink = `https://wa.me/34611328596?text=${encodeURIComponent(whatsappMessage)}`;
   return (
     <section id="about" className="bg-background-light py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -68,8 +74,8 @@ export default function About() {
             </div>
 
             <div className="mt-10">
-              <Link href="#"
-                className="group inline-flex items-center gap-2 font-semibold text-primary transition-colors hover:text-primary/80">
+              <Link href={whatsappLink} 
+                className="uppercase group inline-flex items-center gap-2 text-primary transition-colors hover:text-primary/80">
                 {t.about.ctaLink}
                 <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">
                   arrow_forward

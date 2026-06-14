@@ -27,7 +27,7 @@ export const dictionary = {
             destinations: {
                 label: "Destinos",
             },
-            ctaLink: "Leer Bio Completa"
+            ctaLink: "Contactame"
         },
         portfolio: {
             heading: "Fragmentos de Vida",
