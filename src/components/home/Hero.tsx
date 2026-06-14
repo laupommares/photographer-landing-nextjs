@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <section className="relative h-[85vh] w-full overflow-hidden">
       <Image
-        src="/hero.png"
+        src="/hero-image.png"
         alt="Fine art portrait during golden hour"
         fill
         priority

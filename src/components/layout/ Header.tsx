@@ -44,7 +44,7 @@ export default function Header() {
               className="text-sm tracking-wide transition-colors hover:text-primary">
               Portfolio
             </Link>
-            <Link href="#about"
+            <Link href="/#about"
               className="text-sm tracking-wide transition-colors hover:text-primary">
               {t.header.linkAbout}
             </Link>
@@ -65,11 +65,11 @@ export default function Header() {
 
           {/* Right Nav */}
           <div className="hidden items-center text-text gap-8 lg:flex">
-            <Link href="#process"
+            <Link href="/#process"
               className="text-sm font-medium tracking-wide transition-colors hover:text-primary">
               {t.header.linkProcess}
             </Link>
-            <Link href="#contact"
+            <Link href="/#contact"
               className="text-sm font-medium tracking-wide transition-colors hover:text-primary">
               {t.header.linkContact}
             </Link>
@@ -116,27 +116,32 @@ export default function Header() {
         <div className="lg:hidden fixed top-20 left-0 w-full z-40">
           <div className="bg-white shadow-xl border-t border-sand">
             <div className="px-6 py-8 flex flex-col gap-6 text-text">
-
+              <Link
+                href="/"
+                onClick={() => setIsOpen(false)}
+                className="text-base font-medium hover:text-primary transition-colors" >
+                Home
+              </Link>
               <Link
                 href="/portfolio"
                 onClick={() => setIsOpen(false)}
                 className="text-base font-medium hover:text-primary transition-colors" >
                 Portfolio
               </Link>
+              <Link
+                href="/#about"
+                onClick={() => setIsOpen(false)}
+                className="text-base font-medium hover:text-primary transition-colors" >
+                {t.header.linkAbout}
+              </Link>
 
-              <Link href="#process"
+              <Link href="/#process"
                 onClick={() => setIsOpen(false)}
                 className="text-base font-medium hover:text-primary transition-colors">
                 {t.header.linkProcess}
               </Link>
 
-              <Link href="#about"
-                onClick={() => setIsOpen(false)}
-                className="text-base font-medium hover:text-primary transition-colors">
-                {t.header.linkAbout}
-              </Link>
-
-              <Link href="#contact"
+              <Link href="/#contact"
                 onClick={() => setIsOpen(false)}
                 className="text-base font-medium hover:text-primary transition-colors">
                 {t.header.linkContact}
