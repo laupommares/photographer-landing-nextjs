@@ -1,7 +1,10 @@
+"use client";
 import { dictionary } from "@/lib/dictionary";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Footer() {
-  const t = dictionary.es;
+  const { lang } = useLanguage();
+  const t = dictionary[lang];
 
   return (
     <footer className="bg-background-light border-t border-slate-200">

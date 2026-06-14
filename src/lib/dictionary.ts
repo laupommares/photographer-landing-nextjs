@@ -163,17 +163,18 @@ export const dictionary = {
             secondaryButton: "Contact me"
         },
         footer: {
-            description: "Fotografía fine art capturando historias con luz natural y emoción auténtica.",
-            navigation: "Navegación",
-            contact: "Contacto",
-            email: "hello@tunombre.com",
+            description: "Fine art photography capturing stories through natural light and genuine emotion.",
+            navigation: "Navigation",
+            contact: "Contact",
+            email: "hello@yourname.com",
             instagramUrl: "https://instagram.com/sofiacapuanoph",
-            rights: "Todos los derechos reservados.",
+            rights: "All rights reserved.",
+            signature: "Designed with intention.",
             links: {
-                about: "Sobre mí",
-                portfolio: "Portafolio",
-                process: "Proceso",
-                contact: "Contacto",
+                about: "About",
+                portfolio: "Portfolio",
+                process: "Process",
+                contact: "Contact",
             }
         }
     },
