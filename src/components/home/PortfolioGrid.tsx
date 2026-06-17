@@ -18,14 +18,14 @@ const portfolioItems: PortfolioItem[] = [
     id: 1,
     title: "Weddings",
     category: "Weddings",
-    image: "/hero.jpg",
+    image: "/weddings-16.webp",
     tall: true,
   },
   {
     id: 2,
     title: "Beach Books",
     category: "Beach",
-    image: "/beach.jpeg",
+    image: "/beach-3.webp",
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ const portfolioItems: PortfolioItem[] = [
     id: 4,
     title: "Events",
     category: "Events",
-    image: "/events.jpeg",
+    image: "/events-10.webp",
   },
 ]
 

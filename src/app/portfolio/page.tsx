@@ -14,7 +14,7 @@ const categories = [
 ];
 const weddingWorks = Array.from({ length: 23 }, (_, index) => ({
   category: "Weddings",
-  image: `/weddings-${index + 1}.WEBP`,
+  image: `/weddings-${index + 1}.webp`,
 }));
 const beachWorks = Array.from({ length: 15 }, (_, index) => ({
   category: "Beach",
@@ -22,11 +22,11 @@ const beachWorks = Array.from({ length: 15 }, (_, index) => ({
 }));
 const maternityWorks = Array.from({ length: 6 }, (_, index) => ({
   category: "Maternity",
-  image: `/maternity-${index + 1}.JPG`,
+  image: `/maternity-${index + 1}.webp`,
 }));
 const eventsWorks = Array.from({ length: 16 }, (_, index) => ({
   category: "Events",
-  image: `/events-${index + 1}.JPG`,
+  image: `/events-${index + 1}.webp`,
 }));
 const works = [
   ...weddingWorks,
@@ -36,7 +36,7 @@ const works = [
   {
     category: "Boat Trips",
     image:
-      "/portrait.jpeg",
+      "/portrait.webp",
   },
 ];
 

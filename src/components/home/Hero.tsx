@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <section className="relative h-[85vh] w-full overflow-hidden">
       <Image
-        src="/hero-image.png"
+        src="/hero-image.webp"
         alt="Fine art portrait during golden hour"
         fill
         priority
