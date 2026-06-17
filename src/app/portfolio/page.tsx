@@ -14,11 +14,11 @@ const categories = [
 ];
 const weddingWorks = Array.from({ length: 23 }, (_, index) => ({
   category: "Weddings",
-  image: `/weddings-${index + 1}.jpg`,
+  image: `/weddings-${index + 1}.WEBP`,
 }));
 const beachWorks = Array.from({ length: 15 }, (_, index) => ({
   category: "Beach",
-  image: `/beach-${index + 1}.JPG`,
+  image: `/beach-${index + 1}.webp`,
 }));
 const maternityWorks = Array.from({ length: 6 }, (_, index) => ({
   category: "Maternity",
