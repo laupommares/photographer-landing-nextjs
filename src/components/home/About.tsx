@@ -22,7 +22,7 @@ export default function About() {
           <div className="relative">
             <div className="aspect-4/5 w-full overflow-hidden bg-gray-200 shadow-xl rounded-2xl">
               <Image
-                src="/sofia-capuano3.jpeg"
+                src="/sofia-capuano.webp"
                 alt="Professional female photographer smiling gently holding a vintage camera"
                 fill
                 className="object-cover object-center transition-transform duration-700 hover:scale-105 rounded-2xl"/>
