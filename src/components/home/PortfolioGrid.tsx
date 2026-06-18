@@ -31,7 +31,7 @@ const portfolioItems: PortfolioItem[] = [
     id: 3,
     title: "Board trips",
     category: "Board trips",
-    image: "/portrait.jpeg",
+    image: "/portrait.webp",
     tall: true,
   },
   {
